@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    <section id="contact" class="contact">
+        <div class="max-width">
+            <h2 class="title">Register</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, a!Lorem Lorem ipsum dolor sit.
+                    </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Gaurav Gupta</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Hyderabad,India</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">gaurav1122gupta@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Sign Up</div>
+                    <form action="/register" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="First Name" name = "firstname"/>
+                            </div>
+                            <div class="field name">
+                                <input type="name" placeholder="Last Name" name =  "lastname"/>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="email" placeholder="Your Email" name = "email"/>
+                            </div>
+                            <div class="gender">
+                                <input type="radio" name="gender" value="male" checked> Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="gender" value="female"> Female
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Your Phone" name = "phone"/>
+                            </div>
+                            <div class="field name">
+                                <input type="text" placeholder="Enter Your Age" name = "age"/>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="password" placeholder="Password" name =   "password"/>
+                            </div>
+                            <div class="field name">
+                                <input type="password" placeholder="Confirm Password" name =   "confirmpassword"/>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Sign-up</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+</body>
+</html>
+
+
+

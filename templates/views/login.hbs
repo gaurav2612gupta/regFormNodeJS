@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    <section id="contact" class="contact">
+        <div class="max-width">
+            <h2 class="title">Log in</h2>
+            <div class="contact-content">
+                <div class="column right">
+                    <div class="text">Sign in</div> 
+                    <form action="/login" method="POST">
+                            <div class="field name">
+                                Email : <input type="email" placeholder="Email" required name = "email"/>
+                            </div>
+                            <br>
+                            <div class="field name">
+                                Password : <input type="password" placeholder="Password" required name =  "password"/>
+                            </div>
+                            <br>
+                        <div class="button">
+                            <button type="submit">Sign-in</button>
+                        </div>
+                        <br><br><br>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+</body>
+</html>
+
+
+
